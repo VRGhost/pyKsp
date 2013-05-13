@@ -1,0 +1,5 @@
+SET "PY_KSP_ROOT=%~dp0"
+SET "PY_KSP_MSVS_PROJECT_ROOT=%PY_KSP_ROOT%\SubSpaceControlModule\"
+
+CALL "%PY_KSP_ROOT%\env.bat"
+START "KSP_msvs" "%PY_KSP_MSVS_PROJECT_ROOT%\SubSpaceControlModule.sln" \D "%PY_KSP_MSVS_PROJECT_ROOT%"
